@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+q<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator segitig</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Kalkulator segitiga</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header id="navigation-bar">
@@ -16,21 +16,65 @@
     </header>
 
     <section class="input-luas-section">
+
+<img src="assets/gambar-luas.jpg"/>
+<br>
       <label for="input-tinggi" id="label-tinggi">Tinggi :</label>
       <input
         type="number"
         class="katik-input"
         id="input-tinggi"
-        name="input-tinggi" />
+        name="input-tinggi" placehilder="Nilai Tinggi" />
       <br />
       <label for="input-ala">Alas :</label>
       <input
         type="number"
         class="katik-input"
         id="input-alas"
-        name="input-alas" />
+        name="input-alas" placeholder="Nilai Alas"/>
+
+<div id="hasilLuas"></div>
       <div class="button">
-        <button>Hitung</button>
+        <button onclick="luas()" id="btnhitungluas">Hitung</button>
+        <button>Reset</button>
+      </div>
+    </section>
+
+<!-- ini section keliling-->
+<br><hr>
+<section class="input-keliling-section">
+	<img src="assets/gambar-keliling.jpg"/>
+	<br>
+      <label for="input-sisi1" id="label-tinggi">Sisi :</label>
+      <input
+        type="number"
+        class="katik-input"
+        id="input-sisi1"
+        name="input-s1"
+placeholder="Nilai Sisi 1"/>
+
+<br>
+<label for="input-sisi1" id="label-tinggi">Sisi :</label>
+      <input
+        type="number"
+        class="katik-input"
+        id="input-sisi2"
+        name="input-s2"
+placeholder="Nilai Sisi 2"
+/>
+
+<br>
+<label for="input-sisi1" id="label-tinggi">Sisi :</label>
+      <input
+        type="number"
+        class="katik-input"
+        id="input-sisi3"
+        name="input-s3"
+placeholder="Nilai Sisi 3"
+/>
+	<div id="hasilKeliling"></div>
+      <br />
+        <button onclick="keliling()"  id="btnhitungkeliling">Hitung</button>
         <button>Reset</button>
       </div>
     </section>
