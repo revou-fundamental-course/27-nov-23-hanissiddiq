@@ -30,10 +30,16 @@ function fun() {
 function resetLuas() {
   document.getElementById("input-tinggi").value = "";
   document.getElementById("input-alas").value = "";
+  
+const element = document.getElementById("hasilLuas");
+element.remove();
 }
 
 function resetKeliling() {
   document.getElementById("input-sisi1").value = "";
   document.getElementById("input-sisi2").value = "";
   document.getElementById("input-sisi3").value = "";
+  
+const element = document.getElementById("hasilKeliling");
+element.remove();
 }
