@@ -1,4 +1,4 @@
-q<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,73 +10,76 @@ q<!DOCTYPE html>
     <header id="navigation-bar">
       <h3 id="logo">Katik</h3>
       <nav class="navigation">
-        <a href="">Luas Segitiga</a>
-        <a href="">Keliling Segitiga</a>
+        <a href="#Luas" class="btnNav">Luas Segitiga</a>
+        <a href="#Keliling" class="btnNav">Keliling Segitiga</a>
       </nav>
     </header>
 
-    <section class="input-luas-section">
-
-<img src="assets/gambar-luas.jpg"/>
-<br>
-      <label for="input-tinggi" id="label-tinggi">Tinggi :</label>
+    <section class="input-luas-section" id="Luas">
+      <img src="assets/gambar-luas.jpg" />
+      <br />
+      <label for="input-tinggi">Tinggi :</label>
       <input
         type="number"
         class="katik-input"
         id="input-tinggi"
-        name="input-tinggi" placehilder="Nilai Tinggi" />
+        name="input-tinggi"
+        placeholder="Nilai Tinggi" />
       <br />
-      <label for="input-ala">Alas :</label>
+      <label for="input-alas">Alas :</label>
       <input
         type="number"
         class="katik-input"
         id="input-alas"
-        name="input-alas" placeholder="Nilai Alas"/>
+        name="input-alas"
+        placeholder="Nilai Alas" />
 
-<div id="hasilLuas"></div>
+      <div id="hasilLuas"></div>
       <div class="button">
         <button onclick="luas()" id="btnhitungluas">Hitung</button>
-        <button>Reset</button>
+        <button onclick="resetLuas()">Reset</button>
       </div>
     </section>
 
-<!-- ini section keliling-->
-<br><hr>
-<section class="input-keliling-section">
-	<img src="assets/gambar-keliling.jpg"/>
-	<br>
+    <!-- ini section keliling-->
+    <br />
+    <hr />
+    <section class="input-keliling-section" id="Keliling">
+      <img src="assets/gambar-keliling.jpg" />
+      <br />
       <label for="input-sisi1" id="label-tinggi">Sisi :</label>
       <input
         type="number"
         class="katik-input"
         id="input-sisi1"
         name="input-s1"
-placeholder="Nilai Sisi 1"/>
+        placeholder="Nilai Sisi 1" />
 
-<br>
-<label for="input-sisi1" id="label-tinggi">Sisi :</label>
+      <br />
+      <label for="input-sisi1" id="label-tinggi">Sisi :</label>
       <input
         type="number"
         class="katik-input"
         id="input-sisi2"
         name="input-s2"
-placeholder="Nilai Sisi 2"
-/>
+        placeholder="Nilai Sisi 2" />
 
-<br>
-<label for="input-sisi1" id="label-tinggi">Sisi :</label>
+      <br />
+      <label for="input-sisi1" id="label-tinggi">Sisi :</label>
       <input
         type="number"
         class="katik-input"
         id="input-sisi3"
         name="input-s3"
-placeholder="Nilai Sisi 3"
-/>
-	<div id="hasilKeliling"></div>
-      <br />
-        <button onclick="keliling()"  id="btnhitungkeliling">Hitung</button>
-        <button>Reset</button>
+        placeholder="Nilai Sisi 3" />
+      <div id="hasilKeliling"></div>
+      <div class="button">
+        <br />
+        <button onclick="keliling()" id="btnhitungkeliling">Hitung</button>
+        <button onclick="resetKeliling()">Reset</button>
       </div>
     </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
