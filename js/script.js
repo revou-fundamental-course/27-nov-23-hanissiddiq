@@ -17,6 +17,7 @@ else if(a == 0 || a == 0){
 else{
   document.getElementById("hasilLuas").innerHTML = `<div id="hslL"><ul>
   <li> Luas Segitiga = a * t / 2</li>
+  <li> Luas Segitiga  = ${a} * ${t} / 2</li>
   <li> Hasil = ${rumusluas} </li>
 </ul></div>`;}
 
@@ -54,7 +55,8 @@ else if(s3 == 0 || s3 == null){
 
 else{
   document.getElementById("hasilKeliling").innerHTML =`<div id="hsl"><ul>
-  <li> Keliling = S + S + S</li>
+  <li> K   = S + S + S</li>
+  <li> K   = ${s1} + ${s2}  + ${s3} </li>
   <li> Hasil = ${rumuskeliling} </li>
 </ul></div>`;
     }

@@ -84,6 +84,10 @@ img {
   height: 300px;
 }
 
+ul {
+list-style-type: none;
+ }
+
 @media (min-width: 390px), (max-width: 800px) {
   img {
     width: 400px;
